@@ -9,20 +9,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="background-image">
+    <div id="timeButtons">
+    <button onclick="switchTimeFormat('24')" class="typeOfTime active" id="military">24H</button>
+    <button onclick="switchTimeFormat('12')" class="typeOfTime active" id="normal">12H</button>
+</div>
     <div id="container">
         <div id="days">
-            <span class="day" id="sun">SUN</span>
-            <span class="day" id="mon">MON</span>
-            <span class="day" id="tue">TUE</span>
-            <span class="day" id="wed">WED</span>
-            <span class="day" id="thu">THU</span>
-            <span class="day" id="fri">FRI</span>
-            <span class="day" id="sat">SAT</span>
+            <span class="day active" id="sun">SUN</span>
+            <span class="day active" id="mon">MON</span>
+            <span class="day active" id="tue">TUE</span>
+            <span class="day active" id="wed">WED</span>
+            <span class="day active" id="thu">THU</span>
+            <span class="day active" id="fri">FRI</span>
+            <span class="day active" id="sat">SAT</span>
         </div>
-        <div id="clock">00:00:00</div>
+        <div id="clock-container">
+        <div id="clock">00:00:00</div> 
+        <div id="stage-container">
+            <span class="stage active">AM</span>
+            <span class="stage active">PM</span>
+        </div>
     </div>
-    </div>
+
 
     <script src="arquivo.js"></script>
 </body>
