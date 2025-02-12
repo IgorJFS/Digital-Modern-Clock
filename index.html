@@ -2,28 +2,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock - Paper - Scissors</h1>
-
-    <div class="choices">
-    <button onclick="playGame('rock')">👊</button>
-    <button onclick="playGame('paper')">🖐️</button>
-    <button onclick="playGame('scissors')">✌️</button>
+    <div id="background-image">
+    <div id="container">
+        <div id="days">
+            <span class="day" id="sun">SUN</span>
+            <span class="day" id="mon">MON</span>
+            <span class="day" id="tue">TUE</span>
+            <span class="day" id="wed">WED</span>
+            <span class="day" id="thu">THU</span>
+            <span class="day" id="fri">FRI</span>
+            <span class="day" id="sat">SAT</span>
+        </div>
+        <div id="clock">00:00:00</div>
     </div>
-
-    <div id="playerDisplay">PLAYER:</div>
-    <div id="computerDisplay">COMPUTER:</div>
-    <div id="resultDisplay"></div>
-    
-    <div class="scoreDisplay">Player Score:
-        <span id="playerScoreDisplay">0</span>
-    </div>
-
-    <div class="scoreDisplay">Computer Score:
-        <span id="computerScoreDisplay">0</span>
     </div>
 
     <script src="arquivo.js"></script>
