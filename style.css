@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background: radial-gradient(circle, rgba(30, 30, 30, 0.966), black);
+    user-select: none;
 }
 #days{
     font-family: 'Orbitron', sans-serif;
